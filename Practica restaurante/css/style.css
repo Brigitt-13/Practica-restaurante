@@ -1,0 +1,259 @@
+* {
+ margin: 0;
+ padding: 0;
+ -webkit-box-sizing:border-box;
+ -moz-box-sizing:border-box;
+ box-sizing:border-box; 
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 16px;
+
+}
+
+.contenedor {
+    width: 100%;
+    max-width: 1000px;
+    margin: auto;
+    overflow: hidden;
+}
+
+header {
+    width: 100%;
+    background: url('../img/Restaurant\ \(2\).jpeg') #281a0c;
+    background-size:cover ;
+    background-attachment: fixed ;
+    background-position: center 0;
+
+}
+
+header .contenedor {
+    position: relative;
+    height: 400px;
+
+}
+
+header .menu {
+
+    width:100% ;
+    text-align: right;
+}
+
+header .menu a {
+    color: #fff;
+    font-size: 20px;
+    font-weight: 300;
+    display: inline-block;
+    margin: 40px  20px;
+    text-decoration: none;
+    position: relative;
+}
+
+header .menu a:hover{
+    text-decoration: underline;
+}
+
+header .textos{
+    width: 100%;
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    margin-top: -50px;
+
+}
+
+header .texto .nombre {
+    font-size: 50px;
+    font-weight: 600;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+header .texto .nombre span{
+    font-weight: 300;
+
+}
+
+header.texto  h3{
+    font-weight: 300;
+    font-size: 25px;
+    font-style: italic;
+}
+
+.main .acerca-de .contenedor {
+overflow: visible;
+position: relative;
+}
+
+
+.main .acerca-de .contenedor .foto img {
+    width: 40%;
+    border-radius: 1000px;
+    position: absolute;
+    left: 0;
+    top: -40px;
+    z-index: 0;
+    box-shadow: 0px 0px 15px  rgb( 0,0,0.35);
+}
+
+img{ 
+    width: 30%;
+}
+
+.main .acerca-de article {
+    background: #fff;
+    padding: 70px;
+    width: 70%;
+    position: relative;
+    top: 200px ;
+    float: right;
+    z-index: 1;
+    box-shadow: 0px 0px 15px  rgb( 0,0,0.35);
+}
+
+.main .acerca-de article h3 {
+    font-size: 50px;
+    font-weight: 500;
+    margin-bottom: 40px;
+}
+
+.main .acerca-de article p {
+    line-height: 28px;
+    margin-bottom: 20px;
+}
+.main .menu .contenedor {
+    padding-top: 25% ;
+    margin-bottom: 70px;
+}
+
+.main .menu .titulo {
+    font-size: 40px;
+    font-weight: 300;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.main .menu .contenedor-menu,
+.main .menu .contenedor-menu2 {
+border: 1px solid #000;
+background: transparent;
+padding: 10px;
+overflow: hidden;
+}
+
+.main .menu .contenedor-menu .contenedor-menu2 article {
+    padding:20px;
+    width: 50%;
+    float: left;
+  
+}
+
+.main .menu .categoria{
+    font-size: 22px;
+    font-weight: 700;
+    margin-bottom: 40px;
+    text-align: center;
+}
+.main .menu .platillo{
+    margin-bottom: 30px;
+    padding-bottom: 20px ;
+    border-bottom: 4px  dotted #000;
+    overflow: hidden;
+}
+.main .menu .nombre {
+    font-size: 20px;
+    margin-bottom: 10px;
+    float: left;
+}
+
+.main .menu .precio{
+    font-size: 20px;
+    margin-bottom: 10px;
+    float: right; 
+}
+.main .menu .descripcion{
+    font-size: 16px;
+    color:#676767;
+    clear: both;
+}
+
+.main .galeria .foto {
+    overflow: hidden;
+}
+.main .galeria .foto {
+    width: 25%;
+    float: left;
+}
+   
+ .main .galeria .foto img {
+    width: 100%;
+    vertical-align: top;
+    opacity: .3;
+ }
+ .main .galeria .foto:hover img{
+    opacity: .7;
+    -webkit-transition: all .3s ease;
+    -o-transition: all .3s ease;
+    transition: all .3s ease;
+ }
+.main .ubicacion .contenedor .titulo {
+    margin: 5%;
+    background: #fff;
+    padding: 60px 0;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 50px;
+    text-justify: center;
+}
+.main .ubicacion{
+    overflow: visible;
+    position: relative;
+}
+
+.main .ubicacion{
+    background: #fff;
+    padding: 10px;
+    width: 100%;
+    position: relative;
+    top: 100px ;
+    float: left;
+    z-index: 2;
+    box-shadow: 0px 0px 15px  rgb( 0,0,0.35);
+    margin-bottom: 10%;
+}
+.main .ubicacion .direccion {
+    float: left;
+    width: 80%;
+    text-align: left;
+    font-size: 30px;
+    margin-bottom: 10%;
+}
+.main .mapa {
+    width: 100%;
+    overflow: hidden;
+}
+
+.main .mapa iframe{
+    width: 100%;
+    max-height: 600px;
+}
+footer{
+    background: #000;
+}
+footer .copyright{
+    text-align: center;
+    padding: 15px 0;
+    color:#fff
+}
+
+@media screen and( max-width: 900px) {
+    header .contenedor{
+        position: static ;
+        height: auto;
+    }
+     header .texto{
+        position: static;
+        margin: 100px 0;
+     }
+    
+}
+
